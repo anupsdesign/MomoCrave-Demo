@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        *{box-sizing: border-box;}
+        body{
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 80px;
+            background-image: url(images/momos.jpg);
+            background-size: contain;
+            background-position: center;
+        }
+        .content-wrap{
+            max-width: 1500px;
+            height: 100%;
+            margin: auto;
+            background-color: #f2f2f2;
+            border-radius: 20px;
+            -webkit-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.15);
+            -moz-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.15);
+            box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.15);
+        }
+        .logo{
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: url(images/logo.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .left-menu{
+            line-height: 100px;
+            float: left;
+        }
+        .right-menu{
+            line-height: 100px;
+            float: right;
+        }
+        nav{
+            width: 50%;
+            margin: auto;
+        }
+        nav a{
+            padding: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: sans-serif;
+            color: #000;
+            letter-spacing: .1em;
+        }
+        nav a.active{
+            color: #BE935A;
+            background-color: #fff;
+            border-radius: 30px;
+            -webkit-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.1);
+            box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="content-wrap">
+        <nav>
+        <div class="left-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+        </div>
+        <div class="logo"></div>
+        <div class="right-menu">
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>        
+        </div>
+        </nav>
+    </div>
+  </body>
+</html>

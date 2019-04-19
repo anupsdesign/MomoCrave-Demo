@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+    
+    <link rel="stylesheet" href="style/main.css">
+      
+    <title>Momo Crave | Home</title>
+    <style media="screen">
+        @import url('https://fonts.googleapis.com/css?family=Righteous');
+        @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+        @import url('https://fonts.googleapis.com/css?family=Dosis');
+        
+        .right{
+            background-image: url(images/momos.jpg);
+            background-size: 30% 30%;
+            background-repeat: round;
+        }
+        .main-content{
+            max-width: 1000px;
+            margin: auto;
+            height: 100%;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.15);
+            -moz-box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.15);
+            box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.15);
+            border-radius: 20px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        ::-webkit-scrollbar {
+          display: none;
+        }
+/*
+
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+          display: none;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background: #404E5F; 
+        }
+*/
+        .main-content .content{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .col-12{
+            max-width: 90%;
+            margin: auto;
+            height: 400px;
+            background-image: url(images/momo%20fusion.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 0;
+            border-radius: 20px;
+            -moz-box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.16);
+            box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.16);
+
+        }
+        .col-12 .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .white-overlay{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(223,223,223,.7);
+            padding: 10px;
+        }
+        .main-content .content h1{
+            width: 100%;
+            text-transform: uppercase;
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            font-size: 1.5em;
+            margin: 0px;
+            margin-bottom: 30px;
+            padding: 0;
+            display: none;
+        }
+        .white-overlay p{
+/*            font-family: 'Lobster Two', cursive;*/
+            font-family: 'Abel', sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+        }
+        .img-banner{
+            width: 100%;
+            height: 300px;
+            position: relative;
+            left: 0;
+            background-image: url(images/frymomos.jpg);
+            background-position: bottom left;
+            background-size: cover;
+            background-repeat: no-repeat;
+            pointer-events: none;
+        }
+        .img-banner .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.2);
+        }
+        .img-banner .overlay img{
+            position: absolute;
+            bottom: 0;
+        }
+        .img-banner .overlay h1{
+            position: absolute;
+            margin-top: 80px;
+            width: 100%;
+            text-transform: uppercase;
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            color: #fff;
+            letter-spacing: .1em;
+            font-size: 2em;
+        }
+        .main-content .content .container p{
+            text-align: center;
+        }
+        .hour-notice{
+            font-size: 1em;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+        .hour-notice p{
+            font-family: 'Abel', sans-serif;
+            text-align: center;
+            color:#1F2832;
+            font-size: 1.2em;
+            letter-spacing: .1em;
+        }
+        .hour-notice p span{
+            color: #BE935A;
+        }
+        .order-option{
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            font-size: 1em;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .order-option img{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .order-option-wrap{
+            background-color: #fff;
+            padding: 20px;
+            -webkit-box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.1);
+            box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.1);
+        }
+        p.catering{
+            text-align:center;
+            font-family: 'Abel', sans-serif;
+            margin-top: -20px;
+            font-size: 1.2em;
+        }
+        p.catering a{
+            color:#BE935A;
+        }
+        .menu-border{
+            height: 100%;
+            border: double;
+        }
+        
+        @media only screen and (max-height: 1000px) {
+            ::-webkit-scrollbar {
+                display: block;
+                width: 5px;
+            }
+
+            ::-webkit-scrollbar-track {
+                display: none;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #404E5F; 
+            }
+        }
+        @media only screen and (max-width: 800px) {
+            .img-banner .overlay h1{display: none;}
+            .main-content .content h1{display: block;}   
+            .hour-notice{
+                font-size: .8em;
+            }
+            .order-option{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .order-option img{
+                margin: 20px auto;
+                display: block;
+            }
+            .order-option h2{
+                font-size: 1.3em;
+            }
+            p.catering{font-size: 1em;}
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Small Screen navigation -->    
+    <div class="mobile-logo"><a href="index.html"><div class="logo"></div></a></div>  
+    <div class="mobile-nav">
+        <nav>    
+            <div class="aligned-items">
+                <a href="index.html" class="active">Home</a>
+                <a href="menu.html">Menu</a>    
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="media.html">Press</a>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <a href="https://www.instagram.com/momocrave" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/momocrave/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.yelp.com/biz/momo-crave-woodside" target="_blank"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Large Screen navigation -->
+            <div class="col left">
+                <div class="menu-border">
+                    <a href="index.html"><div class="logo"></div></a>
+                    <nav>    
+                        <div class="aligned-items">
+                            <a href="index.html" class="active">Home</a>
+                            <a href="menu.html">Menu</a>    
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="media.html">Press</a>
+                        </div>
+                    </nav>
+                    <div class="nav-footer">
+                        <div class="icons">
+                            <a href="https://www.instagram.com/momocrave" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/momocrave/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.yelp.com/biz/momo-crave-woodside" target="_blank"><i class="fab fa-yelp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main content -->
+            <div class="col right">
+                <div class="main-content">
+                    <div class="img-banner">
+                        <div class="overlay">
+                                <h1>Welcome to Momo Crave</h1>    
+                        <img src="images/grunge-border-2-white.png" width="100%;">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h1>Welcome to Momo Crave</h1>
+                        <div class="hour-notice">
+                                <p>WE&#39;RE OPEN <span>EVERYDAY</span> FROM <span>12PM - 10PM</span></p>
+                            </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="overlay">
+                                        <div class="white-overlay">
+                                            <p>
+                                                Momo Crave offers authentic and delicious tasting Nepalese cuisine in Queen, NY. Momo Crave has been recognized for outstanding authentic Nepali handmade dumplings.
+                                                <br>
+                                                Come and experience our friendly atmosphere and excellent service.
+                                            </p>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-option">
+                            <div class="order-option-wrap">
+                                <h2>Order online</h2>
+                                
+                                <a href="https://www.seamless.com/menu/momo-crave-3807-69th-st-woodside/890555" target="_blank"><img src="images/seamless.png" width="110px"></a>
+                                <a href="https://postmates.com/merchant/momo-crave-woodside" target="_blank"><img src="images/postmates.png" width="70px"></a>
+                                <a href="https://www.grubhub.com/restaurant/momo-crave-3807-69th-st-woodside/890555" target="_blank"><img src="images/grubhub.png" width="90px"></a>
+                            </div>
+                        </div>
+                        <p class="catering">We do catering too. <a href="tel:1-718-255-1714">Give us a call</a> for more info.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      <!-- Menu icon -->
+    <div class="menu-icon-wrap">
+            <div class="plate bounce-in-fwd">
+                <div id="nav-icon1">
+                  <span><img src="images/white_fork.png" width="100%"></span>
+                  <span><img src="images/white_spoon.png" width="100%"></span>
+                  <span><img src="images/white_knife.png" width="100%"></span>
+                </div>
+            </div>
+      </div>
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!--  to trigger menu icon animation  -->
+    <script src="scripts/menuAnimation.js"></script>
+    <!--  to open and close menu  -->
+    <script src="scripts/opnCloseMenu.js"></script>  
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  </body>
+</html>
