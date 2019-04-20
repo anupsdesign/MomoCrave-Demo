@@ -97,11 +97,11 @@
         .price span {
             max-width: 50%;
         }
-        .tab-content .col-6{border-right: 2px dotted #999;}
+        .tab-content .col-sm{border-right: 2px dotted #999;}
         .tab-content .col-3 span{
             line-height: 95px;
         }
-        .tab-content  .col-6 h1{
+        .tab-content  .col-sm h1{
             font-family: 'Reem Kufi', sans-serif;
             color: #404040;
         }
@@ -254,6 +254,23 @@
             .tab-content h1 i{
                 top: 7px;
             }
+            .col-3{
+                position: relative;
+                left: 50%;
+                transform:translateX(-50%);
+            }
+            .img-wrap{
+                position: relative;
+                left: 10px;
+            }
+            .price{
+                display: none;
+            }
+            .tab-content .col-sm{
+                border:none;
+                text-align: center;
+                margin-top: 20px;
+            }
         }
         
     </style>
@@ -328,10 +345,10 @@
                                         <div class="col-3">
                                           <div class="img-wrap"><div class="img" style="background-image: url(images/jhol-momo.jpg);background-size: 155px;background-position: -17px -5px;"></div></div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm">
                                             <h1 class="center-h1">Momo</h1>
                                         </div>
-                                        <div class="col-3 price">
+                                        <div class="col-2 price">
                                           <span>&#36;6.00</span>
                                         </div>
                                   </div>
@@ -340,10 +357,10 @@
                                     <div class="col-3">
                                       <div class="img-wrap"><div class="img" style="background-image: url(images/fried.png); background-size: contain;"></div></div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm">
                                         <h1 class="center-h1">Fried Momo</h1>
                                     </div>
-                                    <div class="col-3 price">
+                                    <div class="col-2 price">
                                       <span>&#36;6.00</span>
                                     </div>
                                   </div>
@@ -352,11 +369,11 @@
                                     <div class="col-3">
                                       <div class="img-wrap"><div class="img" style="background-image: url(images/tandoori.jpeg)"></div></div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm">
                                         <h1>Tandoori Momo</h1>
                                         <p>Fried momo marinated with special tandoori masala and grilled together with mixed peppers and onions.</p>
                                     </div>
-                                    <div class="col-3 price">
+                                    <div class="col-2 price">
                                       <span>&#36;7.00</span>
                                     </div>
                                   </div>
@@ -365,11 +382,11 @@
                                     <div class="col-3">
                                       <div class="img-wrap"><div class="img" style="background-image: url(images/kothey.jpeg);background-position: center top;"></div></div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm">
                                         <h1>Kothey Momo</h1>
                                         <p>Pan fried momo.</p>
                                     </div>
-                                    <div class="col-3 price">
+                                    <div class="col-2 price">
                                       <span>&#36;7.00</span>
                                     </div>
                                   </div>
@@ -378,11 +395,11 @@
                                     <div class="col-3">
                                       <div class="img-wrap"><div class="img" style="background-image: url(images/chili.png);background-position: bottom;filter: brightness(130%);"></div></div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm">
                                         <h1>Chili Momo <i class="fas fa-pepper-hot"></i></h1>
                                         <p>Fried momo sautéed with special chilli sauce, onions, peppers, tomato and garlic.</p>
                                     </div>
-                                    <div class="col-3 price">
+                                    <div class="col-2 price">
                                       <span>&#36;7.00</span>
                                     </div>
                                   </div>
@@ -391,11 +408,11 @@
                                     <div class="col-3">
                                       <div class="img-wrap"><div class="img" style="background-image: url(images/chaat.jpeg);background-position: center;filter: contrast(120%);"></div></div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm">
                                         <h1>Chaat Momo <i class="fas fa-pepper-hot"></i></h1>
                                         <p>Fried momo mixed with yogurt, spicy tangy tamarind chutney, green chutney, onion and cilantro.</p>
                                     </div>
-                                    <div class="col-3 price">
+                                    <div class="col-2 price">
                                       <span>&#36;8.00</span>
                                     </div>
                                   </div>
@@ -404,11 +421,11 @@
                                     <div class="col-3">
                                       <div class="img-wrap"><div class="img" style="background-image: url(images/sandeko.jpeg);background-position: center;"></div></div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm">
                                         <h1>Sandeko Momo <i class="fas fa-pepper-hot"></i></h1>
                                         <p>Marinated fried momo with spicy tangy sauce, mixed together with roasted soybean, onion, tomatoes and cilantro.</p>
                                     </div>
-                                    <div class="col-3 price">
+                                    <div class="col-2 price">
                                       <span>&#36;7.00</span>
                                     </div>
                                   </div>
@@ -417,11 +434,11 @@
                                     <div class="col-3">
                                       <div class="img-wrap"><div class="img" style="background-image: url(images/tacos.jpeg)"></div></div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm">
                                         <h1>Tacos Momo</h1>
                                         <p>Fried momo topped with avocado, black bean paste and salsa.</p>
                                     </div>
-                                    <div class="col-3 price">
+                                    <div class="col-2 price">
                                       <span>&#36;8.00</span>
                                     </div>
                                   </div>
@@ -430,11 +447,11 @@
                                     <div class="col-3">
                                       <div class="img-wrap"><div class="img" style="background-image: url(images/sukuti.jpeg);background-position: center;"></div></div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm">
                                         <h1>Sukuti Momo <i class="fas fa-pepper-hot"></i></h1>
                                         <p>Fried momo sautéed with garlic, ginger, sukuti (jerky) and marinated with special tangy spicy sauce, onion and cilantro.</p>
                                     </div>
-                                    <div class="col-3 price">
+                                    <div class="col-2 price">
                                       <span>&#36;8.00</span>
                                     </div>
                                   </div>
