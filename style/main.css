@@ -72,12 +72,11 @@ nav{
 nav a{
     display: block;
     padding: 20px;
-    color: #404E5F;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
-    font-weight: 400;
     letter-spacing: .1em;
+    font-weight: bold;
 /*            font-family: 'Abel', sans-serif;*/
 /*            font-family: 'Slabo 27px', serif;*/
 }
