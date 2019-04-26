@@ -36,20 +36,78 @@
             padding-left: 20px;
             padding-right: 20px;
         }
-        .col-12{
-            max-width: 90%;
-            margin: auto;
+        .col-sm{
+            margin: 10px;
             height: 400px;
-            background-color: fuchsia;
-            padding: 0;
             border-radius: 20px;
             -moz-box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.16);
             box-shadow: 0px 0px 28px 15px rgba(0,0,0,0.16);
-
+            text-align: center;
+            padding: 0;
+        }
+        .col-sm img{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
         }
         .menu-border{
             height: 100%;
             border: double;
+        }
+        .flex-center{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: scroll;
+        }
+        .nytimes{
+            width: 100%;
+            background-image: url(images/nytimes-banner.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .nytimes img{
+            filter: invert(1);
+        }
+        .abc7{
+            width: 100%;
+            background-image: url(images/abc7-banner.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .bg-overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.3);
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .col-sm h1{
+            font-family: 'Reem Kufi', sans-serif;
+            position: absolute;
+            bottom: 10px;
+            font-size: 1.5em;
+            color: #fff;
+        }
+        .gradient{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-image: linear-gradient(to bottom, rgba(11,11,11,0), rgba(11,11,11, .6) 80%);
+            padding: 10px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        @media only screen and (max-width: 800px){
+             .flex-center{
+                display: block;
+            }   
+            .flex-center .row{
+                margin-top: 130px;
+            }
         }
     </style>
   </head>
@@ -104,21 +162,30 @@
             <div class="col right">
                 <div class="main-content">
                     
-                    <div class="content">
+                    <div class="content flex-center">
                         
                         <div class="container">
                             
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="overlay">
-                                        <div class="white-overlay">
-                                            <p>
-                                                Momo Crave offers authentic and delicious tasting Nepalese cuisine in Queen, NY. Momo Crave has been recognized for outstanding authentic Nepali handmade dumplings.
-                                                <br>
-                                                Come and experience our friendly atmosphere and excellent service.
-                                            </p>                                            
+                                    <div class="col-sm nytimes">
+                                    <a href="https://www.nytimes.com/2018/11/09/dining/momo-crave-review.html" target="_blank">    
+                                    <div class="bg-overlay">
+                                        <img width="200px" src="images/nytimes.png">
+                                        <div class="gradient">
+                                        <h1 style="text-align: left;">Momos That Stand Out In The Crowd</h1>
                                         </div>
                                     </div>
+                                     </a>   
+                                    </div>
+                                <div class="col-sm abc7">
+                                    <a href="https://abc7ny.com/food/momo-crave-brings-fusion-dumplings-to-woodside/3838113/" target="_blank">
+                                    <div class="bg-overlay">
+                                        <img width="200px" src="images/abc7.png">
+                                        <div class="gradient">
+                                        <h1 style="text-align: left;">Momo Crave brings fusion dumplings to Woodside</h1>
+                                        </div>
+                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
